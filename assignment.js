@@ -18,7 +18,7 @@ woodCalculator([14,5,12]);
 // Make a brick calculator
 
 function brickCalculator(n){
-    if( n <= 10){
+    if( n <= 10 ){
         var result = 1000 * 15;
         console.log(result);
     }
@@ -26,14 +26,9 @@ function brickCalculator(n){
         var result = 1000 * 12;
         console.log(result);
     }
-    else if (n > 20) {
+    else{
         var result = 1000 * 10;
         console.log(result);
     }
-    else{
-        var result = "Your input is wrong";
-        console.log(result);
-    }
-
 }
-brickCalculator(19);
+brickCalculator(45);

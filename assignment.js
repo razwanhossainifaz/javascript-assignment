@@ -57,7 +57,7 @@ function brickCalculator(n){
         console.log(result);
     }
 }
-brickCalculator(45); // input the number of floor
+brickCalculator(21); // input the number of floor
 
 
 /* ----------------- 4 = Find Tiny Friend -------------------- */
@@ -72,5 +72,6 @@ function tinyFriend(friendName){
     }
     return min;
 }
-let tinyWord = tinyFriend(["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful" , "Towaha rabbi"]); // find the smallest
+let friendName = ["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful" , "Towaha rabbi"];
+let tinyWord = tinyFriend(friendName); // find the smallest
 console.log(tinyWord);

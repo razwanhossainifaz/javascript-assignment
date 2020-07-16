@@ -11,8 +11,8 @@ function feetToMile(feet){
     }
 
 }
-var result = feetToMile(10); // input feet number
-console.log(result);
+let convertToMile = feetToMile(10); // input feet number
+console.log(convertToMile);
 
 /* ------------------ 2 = Make Wood Calculator ----------------------- */
 
@@ -34,8 +34,8 @@ function woodCalculator(chair,table,bed){
         return total;
     }
 }
-var result = woodCalculator(14,5,12); //chair,table,bed
-console.log(result,"cubic feet");
+let totalWood = woodCalculator(14,5,12); //chair,table,bed
+console.log(totalWood,"cubic feet");
 
 /* ----------------- 3 = Make a brick calculator ---------------------- */
 
@@ -57,7 +57,7 @@ function brickCalculator(n){
         console.log(result);
     }
 }
-brickCalculator(21); // input the number of floor
+brickCalculator(45); // input the number of floor
 
 
 /* ----------------- 4 = Find Tiny Friend -------------------- */
@@ -72,5 +72,5 @@ function tinyFriend(friendName){
     }
     return min;
 }
-var result = tinyFriend(["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful" , "Towaha rabbi"]); // find the smallest word
-console.log(result);
+let tinyWord = tinyFriend(["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful" , "Towaha rabbi"]); // find the smallest
+console.log(tinyWord);

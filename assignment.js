@@ -64,7 +64,7 @@ brickCalculator(21); // input the number of floor
 
 function tinyFriend(friendName){
     var min = friendName[0];
-    for(var i = 0; i <= friendName.length; i++){
+    for(var i = 0; i < friendName.length; i++){
         var element = friendName[i];
         if(element < min){
             min = element;
@@ -74,4 +74,4 @@ function tinyFriend(friendName){
 }
 let friendName = ["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful" , "Towaha rabbi"];
 let tinyWord = tinyFriend(friendName); // find the smallest
-console.log(tinyWord);
+console.log("Smallest Name =",tinyWord);

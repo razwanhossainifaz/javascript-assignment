@@ -1,4 +1,4 @@
-//Feet To Mile
+/* ------------------ Feet To Mile ---------------------------- */
 
 function feetToMile(feet){
     var mile = feet/5280;
@@ -7,7 +7,7 @@ function feetToMile(feet){
 var result = feetToMile(1);
 console.log(result);
 
-//Make Wood Calculator
+/* ------------------ Make Wood Calculator -------------------------- */
 
 function woodCalculator([chair,table,bed]){
     var result = (chair * 1) + (table * 3) + (bed * 5);
@@ -15,7 +15,7 @@ function woodCalculator([chair,table,bed]){
 }
 woodCalculator([14,5,12]);
 
-// Make a brick calculator
+/* ----------------- Make a brick calculator ----------------------*/
 
 function brickCalculator(n){
     if( n <= 0 ){
@@ -36,3 +36,19 @@ function brickCalculator(n){
     }
 }
 brickCalculator(21);
+
+
+/* ----------------- Find Tiny Friend -------------------- */
+
+function tinyFriend(friendName){
+    var min = friendName[0];
+    for(var i = 0; i <= friendName.length; i++){
+        var element = friendName[i];
+        if(element < min){
+            min = element;
+        }
+    }
+    return min;
+}
+var result = tinyFriend(["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful"]);
+console.log(result);

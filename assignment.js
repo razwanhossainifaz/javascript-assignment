@@ -68,5 +68,5 @@ function tinyFriend(friendName){
     }
     return min;
 }
-var result = tinyFriend(["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful" , "Towaha rabbi"]); // input array element and find the smallest word
+var result = tinyFriend(["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful" , "Towaha rabbi"]); // find the smallest word
 console.log(result);

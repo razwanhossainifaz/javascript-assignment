@@ -7,18 +7,33 @@ function feetToMile(feet){
     }
     return mile;
 }
-var result = feetToMile(-12);
+var result = feetToMile(1);
 console.log(result);
 
-/* ------------------ Make Wood Calculator -------------------------- */
+/* ------------------ Make Wood Calculator ----------------------- */
 
-function woodCalculator([chair,table,bed]){
-    var result = (chair * 1) + (table * 3) + (bed * 5);
-    console.log(result);
+function woodCalculator(chair,table,bed){
+    var chair = chair * 1;
+    var table = table * 3;
+    var bed = bed * 5;
+    var total = chair + table + bed;
+    if( chair <= 0){
+        return "Your input is invalid"
+    }
+    else if( table <= 0){
+        return "Your input is invalid"
+    }
+    else if( bed <= 0){
+        return "Your input is invalid"
+    }
+    else{
+        return total;
+    }
 }
-woodCalculator([14,5,12]);
+var result = woodCalculator(14,5,12);
+console.log(result);
 
-/* ----------------- Make a brick calculator ----------------------*/
+/* ----------------- Make a brick calculator ---------------------- */
 
 function brickCalculator(n){
     if( n <= 0 ){

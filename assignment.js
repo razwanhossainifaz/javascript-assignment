@@ -1,13 +1,17 @@
 /* ------------------ 1 = Feet To Mile ---------------------------- */
 
 function feetToMile(feet){
-    var mile = feet/5280;
-    while( feet <= 0){
-        return "Distance can not be negative"
+    if(feet <= 0){
+        return "Distance can not be negative";
     }
-    return mile;
+    else{
+        var formula = feet/5280;
+        var mile = feet + " " + "Feet = " + formula.toFixed(10) + " " + "Mile";
+        return mile;
+    }
+
 }
-var result = feetToMile(1); // input feet number
+var result = feetToMile(10); // input feet number
 console.log(result);
 
 /* ------------------ 2 = Make Wood Calculator ----------------------- */
@@ -31,7 +35,7 @@ function woodCalculator(chair,table,bed){
     }
 }
 var result = woodCalculator(14,5,12); //chair,table,bed
-console.log(result);
+console.log(result,"cubic feet");
 
 /* ----------------- 3 = Make a brick calculator ---------------------- */
 

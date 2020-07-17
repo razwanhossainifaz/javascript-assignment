@@ -2,9 +2,12 @@
 
 function feetToMile(feet){
     var mile = feet/5280;
+    while( feet <= 0){
+        return "Distance can not be negative"
+    }
     return mile;
 }
-var result = feetToMile(1);
+var result = feetToMile(-12);
 console.log(result);
 
 /* ------------------ Make Wood Calculator -------------------------- */

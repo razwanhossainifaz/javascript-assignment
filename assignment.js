@@ -1,4 +1,4 @@
-/* ------------------ Feet To Mile ---------------------------- */
+/* ------------------ 1 = Feet To Mile ---------------------------- */
 
 function feetToMile(feet){
     var mile = feet/5280;
@@ -7,10 +7,10 @@ function feetToMile(feet){
     }
     return mile;
 }
-var result = feetToMile(1);
+var result = feetToMile(1); // input feet number
 console.log(result);
 
-/* ------------------ Make Wood Calculator ----------------------- */
+/* ------------------ 2 = Make Wood Calculator ----------------------- */
 
 function woodCalculator(chair,table,bed){
     var chair = chair * 1;
@@ -30,10 +30,10 @@ function woodCalculator(chair,table,bed){
         return total;
     }
 }
-var result = woodCalculator(14,5,12);
+var result = woodCalculator(14,5,12); //chair,table,bed
 console.log(result);
 
-/* ----------------- Make a brick calculator ---------------------- */
+/* ----------------- 3 = Make a brick calculator ---------------------- */
 
 function brickCalculator(n){
     if( n <= 0 ){
@@ -53,10 +53,10 @@ function brickCalculator(n){
         console.log(result);
     }
 }
-brickCalculator(21);
+brickCalculator(21); // input the number of floor
 
 
-/* ----------------- Find Tiny Friend -------------------- */
+/* ----------------- 4 = Find Tiny Friend -------------------- */
 
 function tinyFriend(friendName){
     var min = friendName[0];
@@ -68,5 +68,5 @@ function tinyFriend(friendName){
     }
     return min;
 }
-var result = tinyFriend(["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful"]);
+var result = tinyFriend(["Sadman" , "Junayed" , "Rubel" , "Ifaz" , "Shariful" , "Towaha rabbi"]); // input array element and find the smallest word
 console.log(result);
